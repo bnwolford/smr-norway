@@ -290,22 +290,6 @@ A ready-to-adapt methods paragraph is in `docs/methods.md`.
 
 ---
 
-## Publishing to GitHub
-
-This folder is a complete repository but is not yet git-initialized. To publish it:
-
-```bash
-./INIT_GIT.sh                      # creates the repo + first commit locally
-git branch -M main
-git remote add origin git@github.com:<you>/smr-norway.git
-git push -u origin main
-```
-
-`INIT_GIT.sh` just runs `git init && git add -A && git commit`; inspect it first
-if you prefer. The `.gitignore` already excludes analysis outputs and OS cruft.
-
----
-
 ## License
 
 MIT — see `LICENSE`. Note this covers the *code*; the reference mortality rates
