@@ -3,9 +3,9 @@ message: "If you use this software, please cite it and the underlying data sourc
 title: "smr-norway: Standardized mortality ratio against the Norwegian general population"
 abstract: "An R toolkit to compute standardized mortality ratios (SMR) comparing a study cohort with the Norwegian general population, using Statistics Norway life-table rates and exact Lexis person-time expansion."
 authors:
-  family-names: Wolford
-  given-names: Brooke
-  orcid: https://orcid.org/0000-0003-3153-1552
+ - family-names: Wolford
+   given-names: Brooke
+   orcid: https://orcid.org/0000-0003-3153-1552
 version: "1.0.0"
 date-released: "2026-08-20"
 license: MIT
