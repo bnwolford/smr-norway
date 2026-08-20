@@ -41,13 +41,12 @@ smr-norway/
 │   ├── smr_analysis_age_input.R              <- input: age at entry (no DOB)
 │   ├── smr_analysis_dates.R                  <- input: THREE dates (start/end obs + death) *most common*
 │   ├── smr_analysis_dates_80plus_2013_2022.R <- worked restriction: age 80+, years 2013-2022
+│   ├── smr_plot.R                <- base-R two-panel forest + obs/expected bars
+│   └── smr_plot_gg.R             <- ggplot2 forest plot (CI-visible, alpha points)
 │   └── utils/
 │       ├── reconcile_deaths.R    <- audit: raw death dates -> counted deaths, stage by stage
 │       └── find_lost_deaths.R    <- audit: list any deaths dropped during Lexis expansion
 │
-├── R/                            <- plotting functions (source after an analysis script)
-│   ├── smr_plot.R                <- base-R two-panel forest + obs/expected bars
-│   └── smr_plot_gg.R             <- ggplot2 forest plot (CI-visible, alpha points)
 │
 ├── data/
 │   └── norway_reference_mortality_rates.csv  <- SSB reference rates (ships with repo)
@@ -75,7 +74,7 @@ smr-norway/
 
 - **R ≥ 4.0**
 - One package: **`data.table`**. Plotting additionally needs **`ggplot2`**
-  (for `R/smr_plot_gg.R`) — the base-R plotter needs nothing extra.
+  (for `scripts/smr_plot_gg.R`) — the base-R plotter needs nothing extra.
 
 ```r
 install.packages(c("data.table", "ggplot2"))
@@ -105,7 +104,7 @@ prints the SMR tables, writes the output CSVs, and saves a forest plot to
 
 ```r
 source("scripts/smr_analysis_dates.R")   # writes smr_overall.csv, smr_by_sex.csv, smr_by_age.csv
-source("R/smr_plot_gg.R")
+source("scripts/smr_plot_gg.R")
 p <- plot_smr_gg("smr_by_age.csv")
 ggplot2::ggsave("my_forest.png", p, width = 8, height = 6, dpi = 300)
 ```

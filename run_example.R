@@ -30,7 +30,7 @@ source("scripts/smr_analysis_dates.R")
 
 ## Plot from the by-age output.
 if (requireNamespace("ggplot2", quietly = TRUE)) {
-  source("R/smr_plot_gg.R")
+  source("scripts/smr_plot_gg.R")
   p <- plot_smr_gg("smr_by_age.csv")
   dir.create("docs/figures", showWarnings = FALSE, recursive = TRUE)
   ggplot2::ggsave("docs/figures/example_output_gg.png", p,
