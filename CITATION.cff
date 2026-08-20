@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it and the underlying data source (Statistics Norway table 07902)."
 title: "smr-norway: Standardized mortality ratio against the Norwegian general population"
 abstract: "An R toolkit to compute standardized mortality ratios (SMR) comparing a study cohort with the Norwegian general population, using Statistics Norway life-table rates and exact Lexis person-time expansion."
+author: "Brooke Wolford"
 version: "1.0.0"
 date-released: "2026-08-20"
 license: MIT
