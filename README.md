@@ -1,8 +1,6 @@
 # smr-norway
 
-[![tests](https://github.com/OWNER/smr-norway/actions/workflows/test.yml/badge.svg)](https://github.com/OWNER/smr-norway/actions/workflows/test.yml)
-
-> Replace `OWNER` in the badge URL above with your GitHub username/org once you push.
+[![tests](https://github.com/bnwolford/smr-norway/actions/workflows/test.yml/badge.svg)](https://github.com/bnwolford/smr-norway/actions/workflows/test.yml)
 
 **Standardized mortality ratio (SMR) against the Norwegian general population.**
 
