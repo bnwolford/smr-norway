@@ -1,0 +1,17 @@
+Package: smrnorway
+Title: Standardized Mortality Ratio Against the Norwegian General Population
+Version: 1.0.0
+Description: Scripts and functions to compute standardized mortality ratios
+    (SMR) comparing a study cohort with the Norwegian general population using
+    Statistics Norway life-table rates (StatBank 07902), with exact Lexis
+    person-time expansion, exact Poisson (Garwood) confidence intervals, and
+    forest-plot visualization. This is a script collection, not an installable
+    package; DESCRIPTION is provided for dependency documentation.
+License: MIT
+Encoding: UTF-8
+Depends:
+    R (>= 4.0)
+Imports:
+    data.table
+Suggests:
+    ggplot2

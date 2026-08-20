@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it and the underlying data source (Statistics Norway table 07902)."
+title: "smr-norway: Standardized mortality ratio against the Norwegian general population"
+abstract: "An R toolkit to compute standardized mortality ratios (SMR) comparing a study cohort with the Norwegian general population, using Statistics Norway life-table rates and exact Lexis person-time expansion."
+version: "1.0.0"
+date-released: "2026-08-20"
+license: MIT
+keywords:
+  - standardized mortality ratio
+  - SMR
+  - epidemiology
+  - survival analysis
+  - person-time
+  - Lexis
+  - Norway
+references:
+  - type: data
+    title: "StatBank table 07902: Life tables, by sex and age"
+    authors:
+      - name: "Statistics Norway (Statistisk sentralbyrå)"
+    url: "https://www.ssb.no/en/statbank/table/07902"
